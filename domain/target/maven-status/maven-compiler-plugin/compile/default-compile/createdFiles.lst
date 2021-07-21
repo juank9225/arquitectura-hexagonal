@@ -1,0 +1,5 @@
+org\baeldung\servicio\BooksServiceFactory.class
+org\baeldung\datos\Book.class
+org\baeldung\servicio\BooksServiceImpl.class
+org\baeldung\repositorio\BooksRepository.class
+org\baeldung\repositorio\BooksService.class

@@ -1,13 +1,16 @@
 package org.baeldung;
 
 import lombok.extern.slf4j.Slf4j;
+import org.baeldung.datos.Book;
+import org.baeldung.repositorio.BooksRepository;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.UUID;
 
-
+@Slf4j
 public class BooksRepositoryImpl implements BooksRepository {
 
     private static final String INSERT_BOOKS_SQL = "INSERT INTO books" + " (id, title, author, description) VALUES " + " (?, ?, ?, ?);";

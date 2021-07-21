@@ -1,6 +1,7 @@
 package org.baeldung;
 
-import com.sun.tools.javac.util.StringUtils;
+
+import org.baeldung.repositorio.BooksService;
 
 import java.lang.*;
 import java.io.Console;
@@ -36,13 +37,7 @@ public class ConsoleApp {
         final String name = console.readLine("Enter book title: ");
         final String author = console.readLine("Enter author name: ");
         final String description = console.readLine("Enter description: ");
-        if (StringUtils.isBlank(name)) {
-            console.writer()
-                    .println("Book not created, all arguments are required!");
-        } else if (StringUtils.isBlank(author)) {
-            console.writer()
-                    .println("Book not created, all arguments are required!");
-        } else if (StringUtils.isBlank(description)) {
+        if (name == "" || author == "" || description == "") {
             console.writer()
                     .println("Book not created, all arguments are required!");
         } else {
